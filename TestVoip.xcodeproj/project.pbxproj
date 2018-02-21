@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19EA7CB3203C4A3900F30EF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA7CB2203C4A3900F30EF2 /* AppDelegate.swift */; };
+		19EA7CB5203C4A3900F30EF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA7CB4203C4A3900F30EF2 /* ViewController.swift */; };
+		19EA7CB8203C4A3900F30EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EA7CB6203C4A3900F30EF2 /* Main.storyboard */; };
+		19EA7CBA203C4A3900F30EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EA7CB9203C4A3900F30EF2 /* Assets.xcassets */; };
+		19EA7CBD203C4A3900F30EF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EA7CBB203C4A3900F30EF2 /* LaunchScreen.storyboard */; };
+		19EA7CC5203C4A4400F30EF2 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA7CC4203C4A4400F30EF2 /* Manager.swift */; };
+		19EA7E39203C525A00F30EF2 /* liblinphone-sdk in Resources */ = {isa = PBXBuildFile; fileRef = 19EA7E38203C525A00F30EF2 /* liblinphone-sdk */; };
+		19EA7E46203C560D00F30EF2 /* linphone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3A203C560C00F30EF2 /* linphone.framework */; };
+		19EA7E47203C560D00F30EF2 /* mscodec2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3B203C560C00F30EF2 /* mscodec2.framework */; };
+		19EA7E4C203C560D00F30EF2 /* ortp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E40203C560D00F30EF2 /* ortp.framework */; };
+		19EA7E4D203C560D00F30EF2 /* msopenh264.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E41203C560D00F30EF2 /* msopenh264.framework */; };
+		19EA7E52203C561500F30EF2 /* bctoolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3E203C560D00F30EF2 /* bctoolbox.framework */; };
+		19EA7E56203C561500F30EF2 /* linphonetester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3D203C560C00F30EF2 /* linphonetester.framework */; };
+		19EA7E58203C561500F30EF2 /* mediastreamer_base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E45203C560D00F30EF2 /* mediastreamer_base.framework */; };
+		19EA7E5A203C561500F30EF2 /* mediastreamer_voip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3F203C560D00F30EF2 /* mediastreamer_voip.framework */; };
+		19EA7E5C203C561500F30EF2 /* msamr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E42203C560D00F30EF2 /* msamr.framework */; };
+		19EA7E62203C561500F30EF2 /* mssilk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E43203C560D00F30EF2 /* mssilk.framework */; };
+		19EA7E64203C561500F30EF2 /* mswebrtc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E44203C560D00F30EF2 /* mswebrtc.framework */; };
+		19EA7E66203C561500F30EF2 /* msx264.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3C203C560C00F30EF2 /* msx264.framework */; };
+		19EA7E70203C5A5B00F30EF2 /* bctoolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3E203C560D00F30EF2 /* bctoolbox.framework */; };
+		19EA7E71203C5A5B00F30EF2 /* bctoolbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3E203C560D00F30EF2 /* bctoolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19EA7E72203C5A5B00F30EF2 /* linphone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3A203C560C00F30EF2 /* linphone.framework */; };
+		19EA7E73203C5A5B00F30EF2 /* linphone.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3A203C560C00F30EF2 /* linphone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19EA7E74203C5A5B00F30EF2 /* linphonetester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3D203C560C00F30EF2 /* linphonetester.framework */; };
+		19EA7E75203C5A5B00F30EF2 /* linphonetester.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3D203C560C00F30EF2 /* linphonetester.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19EA7E76203C5A5B00F30EF2 /* mediastreamer_base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E45203C560D00F30EF2 /* mediastreamer_base.framework */; };
+		19EA7E77203C5A5B00F30EF2 /* mediastreamer_base.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E45203C560D00F30EF2 /* mediastreamer_base.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19EA7E78203C5A5B00F30EF2 /* mediastreamer_voip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3F203C560D00F30EF2 /* mediastreamer_voip.framework */; };
+		19EA7E79203C5A5B00F30EF2 /* mediastreamer_voip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3F203C560D00F30EF2 /* mediastreamer_voip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19EA7E7A203C5A5B00F30EF2 /* msamr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E42203C560D00F30EF2 /* msamr.framework */; };
+		19EA7E7B203C5A5B00F30EF2 /* msamr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E42203C560D00F30EF2 /* msamr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19EA7E7C203C5A5B00F30EF2 /* mscodec2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3B203C560C00F30EF2 /* mscodec2.framework */; };
+		19EA7E7D203C5A5B00F30EF2 /* mscodec2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3B203C560C00F30EF2 /* mscodec2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19EA7E7E203C5A5B00F30EF2 /* msopenh264.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E41203C560D00F30EF2 /* msopenh264.framework */; };
+		19EA7E7F203C5A5B00F30EF2 /* msopenh264.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E41203C560D00F30EF2 /* msopenh264.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19EA7E80203C5A5B00F30EF2 /* mssilk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E43203C560D00F30EF2 /* mssilk.framework */; };
+		19EA7E81203C5A5B00F30EF2 /* mssilk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E43203C560D00F30EF2 /* mssilk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19EA7E82203C5A5B00F30EF2 /* mswebrtc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E44203C560D00F30EF2 /* mswebrtc.framework */; };
+		19EA7E83203C5A5B00F30EF2 /* mswebrtc.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E44203C560D00F30EF2 /* mswebrtc.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19EA7E84203C5A5B00F30EF2 /* msx264.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3C203C560C00F30EF2 /* msx264.framework */; };
+		19EA7E85203C5A5B00F30EF2 /* msx264.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E3C203C560C00F30EF2 /* msx264.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19EA7E86203C5A5B00F30EF2 /* ortp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E40203C560D00F30EF2 /* ortp.framework */; };
+		19EA7E87203C5A5B00F30EF2 /* ortp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19EA7E40203C560D00F30EF2 /* ortp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19EA7E8A203C5DBC00F30EF2 /* linphonerc-factory in Resources */ = {isa = PBXBuildFile; fileRef = 19EA7E89203C5DBC00F30EF2 /* linphonerc-factory */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19EA7E88203C5A5B00F30EF2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				19EA7E75203C5A5B00F30EF2 /* linphonetester.framework in Embed Frameworks */,
+				19EA7E85203C5A5B00F30EF2 /* msx264.framework in Embed Frameworks */,
+				19EA7E83203C5A5B00F30EF2 /* mswebrtc.framework in Embed Frameworks */,
+				19EA7E77203C5A5B00F30EF2 /* mediastreamer_base.framework in Embed Frameworks */,
+				19EA7E7D203C5A5B00F30EF2 /* mscodec2.framework in Embed Frameworks */,
+				19EA7E81203C5A5B00F30EF2 /* mssilk.framework in Embed Frameworks */,
+				19EA7E79203C5A5B00F30EF2 /* mediastreamer_voip.framework in Embed Frameworks */,
+				19EA7E71203C5A5B00F30EF2 /* bctoolbox.framework in Embed Frameworks */,
+				19EA7E73203C5A5B00F30EF2 /* linphone.framework in Embed Frameworks */,
+				19EA7E7F203C5A5B00F30EF2 /* msopenh264.framework in Embed Frameworks */,
+				19EA7E7B203C5A5B00F30EF2 /* msamr.framework in Embed Frameworks */,
+				19EA7E87203C5A5B00F30EF2 /* ortp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19EA7CAF203C4A3900F30EF2 /* TestVoip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVoip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19EA7CB2203C4A3900F30EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19EA7CB4203C4A3900F30EF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19EA7CB7203C4A3900F30EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19EA7CB9203C4A3900F30EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19EA7CBC203C4A3900F30EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19EA7CBE203C4A3900F30EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19EA7CC4203C4A4400F30EF2 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		19EA7CC8203C4A7900F30EF2 /* TestVoip-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestVoip-Bridging-Header.h"; sourceTree = "<group>"; };
+		19EA7E38203C525A00F30EF2 /* liblinphone-sdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "liblinphone-sdk"; sourceTree = "<group>"; };
+		19EA7E3A203C560C00F30EF2 /* linphone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = linphone.framework; path = "TestVoip/liblinphone-sdk/apple-darwin/Frameworks/linphone.framework"; sourceTree = "<group>"; };
+		19EA7E3B203C560C00F30EF2 /* mscodec2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mscodec2.framework; path = "TestVoip/liblinphone-sdk/apple-darwin/Frameworks/mscodec2.framework"; sourceTree = "<group>"; };
+		19EA7E3C203C560C00F30EF2 /* msx264.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = msx264.framework; path = "TestVoip/liblinphone-sdk/apple-darwin/Frameworks/msx264.framework"; sourceTree = "<group>"; };
+		19EA7E3D203C560C00F30EF2 /* linphonetester.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = linphonetester.framework; path = "TestVoip/liblinphone-sdk/apple-darwin/Frameworks/linphonetester.framework"; sourceTree = "<group>"; };
+		19EA7E3E203C560D00F30EF2 /* bctoolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = bctoolbox.framework; path = "TestVoip/liblinphone-sdk/apple-darwin/Frameworks/bctoolbox.framework"; sourceTree = "<group>"; };
+		19EA7E3F203C560D00F30EF2 /* mediastreamer_voip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mediastreamer_voip.framework; path = "TestVoip/liblinphone-sdk/apple-darwin/Frameworks/mediastreamer_voip.framework"; sourceTree = "<group>"; };
+		19EA7E40203C560D00F30EF2 /* ortp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ortp.framework; path = "TestVoip/liblinphone-sdk/apple-darwin/Frameworks/ortp.framework"; sourceTree = "<group>"; };
+		19EA7E41203C560D00F30EF2 /* msopenh264.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = msopenh264.framework; path = "TestVoip/liblinphone-sdk/apple-darwin/Frameworks/msopenh264.framework"; sourceTree = "<group>"; };
+		19EA7E42203C560D00F30EF2 /* msamr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = msamr.framework; path = "TestVoip/liblinphone-sdk/apple-darwin/Frameworks/msamr.framework"; sourceTree = "<group>"; };
+		19EA7E43203C560D00F30EF2 /* mssilk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mssilk.framework; path = "TestVoip/liblinphone-sdk/apple-darwin/Frameworks/mssilk.framework"; sourceTree = "<group>"; };
+		19EA7E44203C560D00F30EF2 /* mswebrtc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mswebrtc.framework; path = "TestVoip/liblinphone-sdk/apple-darwin/Frameworks/mswebrtc.framework"; sourceTree = "<group>"; };
+		19EA7E45203C560D00F30EF2 /* mediastreamer_base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mediastreamer_base.framework; path = "TestVoip/liblinphone-sdk/apple-darwin/Frameworks/mediastreamer_base.framework"; sourceTree = "<group>"; };
+		19EA7E89203C5DBC00F30EF2 /* linphonerc-factory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linphonerc-factory"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19EA7CAC203C4A3900F30EF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EA7E84203C5A5B00F30EF2 /* msx264.framework in Frameworks */,
+				19EA7E66203C561500F30EF2 /* msx264.framework in Frameworks */,
+				19EA7E46203C560D00F30EF2 /* linphone.framework in Frameworks */,
+				19EA7E47203C560D00F30EF2 /* mscodec2.framework in Frameworks */,
+				19EA7E74203C5A5B00F30EF2 /* linphonetester.framework in Frameworks */,
+				19EA7E56203C561500F30EF2 /* linphonetester.framework in Frameworks */,
+				19EA7E7A203C5A5B00F30EF2 /* msamr.framework in Frameworks */,
+				19EA7E7C203C5A5B00F30EF2 /* mscodec2.framework in Frameworks */,
+				19EA7E78203C5A5B00F30EF2 /* mediastreamer_voip.framework in Frameworks */,
+				19EA7E76203C5A5B00F30EF2 /* mediastreamer_base.framework in Frameworks */,
+				19EA7E70203C5A5B00F30EF2 /* bctoolbox.framework in Frameworks */,
+				19EA7E5C203C561500F30EF2 /* msamr.framework in Frameworks */,
+				19EA7E5A203C561500F30EF2 /* mediastreamer_voip.framework in Frameworks */,
+				19EA7E72203C5A5B00F30EF2 /* linphone.framework in Frameworks */,
+				19EA7E58203C561500F30EF2 /* mediastreamer_base.framework in Frameworks */,
+				19EA7E52203C561500F30EF2 /* bctoolbox.framework in Frameworks */,
+				19EA7E80203C5A5B00F30EF2 /* mssilk.framework in Frameworks */,
+				19EA7E4C203C560D00F30EF2 /* ortp.framework in Frameworks */,
+				19EA7E82203C5A5B00F30EF2 /* mswebrtc.framework in Frameworks */,
+				19EA7E4D203C560D00F30EF2 /* msopenh264.framework in Frameworks */,
+				19EA7E62203C561500F30EF2 /* mssilk.framework in Frameworks */,
+				19EA7E7E203C5A5B00F30EF2 /* msopenh264.framework in Frameworks */,
+				19EA7E64203C561500F30EF2 /* mswebrtc.framework in Frameworks */,
+				19EA7E86203C5A5B00F30EF2 /* ortp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19EA7CA6203C4A3900F30EF2 = {
+			isa = PBXGroup;
+			children = (
+				19EA7CB1203C4A3900F30EF2 /* TestVoip */,
+				19EA7CB0203C4A3900F30EF2 /* Products */,
+				19EA7CCB203C4A8F00F30EF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		19EA7CB0203C4A3900F30EF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19EA7CAF203C4A3900F30EF2 /* TestVoip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19EA7CB1203C4A3900F30EF2 /* TestVoip */ = {
+			isa = PBXGroup;
+			children = (
+				19EA7CB2203C4A3900F30EF2 /* AppDelegate.swift */,
+				19EA7CB4203C4A3900F30EF2 /* ViewController.swift */,
+				19EA7CB6203C4A3900F30EF2 /* Main.storyboard */,
+				19EA7CB9203C4A3900F30EF2 /* Assets.xcassets */,
+				19EA7CBB203C4A3900F30EF2 /* LaunchScreen.storyboard */,
+				19EA7E38203C525A00F30EF2 /* liblinphone-sdk */,
+				19EA7CBE203C4A3900F30EF2 /* Info.plist */,
+				19EA7CC4203C4A4400F30EF2 /* Manager.swift */,
+				19EA7E89203C5DBC00F30EF2 /* linphonerc-factory */,
+				19EA7CC8203C4A7900F30EF2 /* TestVoip-Bridging-Header.h */,
+			);
+			path = TestVoip;
+			sourceTree = "<group>";
+		};
+		19EA7CCB203C4A8F00F30EF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19EA7E3E203C560D00F30EF2 /* bctoolbox.framework */,
+				19EA7E3A203C560C00F30EF2 /* linphone.framework */,
+				19EA7E3D203C560C00F30EF2 /* linphonetester.framework */,
+				19EA7E45203C560D00F30EF2 /* mediastreamer_base.framework */,
+				19EA7E3F203C560D00F30EF2 /* mediastreamer_voip.framework */,
+				19EA7E42203C560D00F30EF2 /* msamr.framework */,
+				19EA7E3B203C560C00F30EF2 /* mscodec2.framework */,
+				19EA7E41203C560D00F30EF2 /* msopenh264.framework */,
+				19EA7E43203C560D00F30EF2 /* mssilk.framework */,
+				19EA7E44203C560D00F30EF2 /* mswebrtc.framework */,
+				19EA7E3C203C560C00F30EF2 /* msx264.framework */,
+				19EA7E40203C560D00F30EF2 /* ortp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19EA7CAE203C4A3900F30EF2 /* TestVoip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19EA7CC1203C4A3900F30EF2 /* Build configuration list for PBXNativeTarget "TestVoip" */;
+			buildPhases = (
+				19EA7CAB203C4A3900F30EF2 /* Sources */,
+				19EA7CAC203C4A3900F30EF2 /* Frameworks */,
+				19EA7CAD203C4A3900F30EF2 /* Resources */,
+				19EA7D4D203C4CFD00F30EF2 /* ShellScript */,
+				19EA7E88203C5A5B00F30EF2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestVoip;
+			productName = TestVoip;
+			productReference = 19EA7CAF203C4A3900F30EF2 /* TestVoip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19EA7CA7203C4A3900F30EF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Saeid;
+				TargetAttributes = {
+					19EA7CAE203C4A3900F30EF2 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 19EA7CAA203C4A3900F30EF2 /* Build configuration list for PBXProject "TestVoip" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19EA7CA6203C4A3900F30EF2;
+			productRefGroup = 19EA7CB0203C4A3900F30EF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19EA7CAE203C4A3900F30EF2 /* TestVoip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19EA7CAD203C4A3900F30EF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EA7CBD203C4A3900F30EF2 /* LaunchScreen.storyboard in Resources */,
+				19EA7CBA203C4A3900F30EF2 /* Assets.xcassets in Resources */,
+				19EA7E39203C525A00F30EF2 /* liblinphone-sdk in Resources */,
+				19EA7E8A203C5DBC00F30EF2 /* linphonerc-factory in Resources */,
+				19EA7CB8203C4A3900F30EF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19EA7D4D203C4CFD00F30EF2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19EA7CAB203C4A3900F30EF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EA7CB5203C4A3900F30EF2 /* ViewController.swift in Sources */,
+				19EA7CC5203C4A4400F30EF2 /* Manager.swift in Sources */,
+				19EA7CB3203C4A3900F30EF2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		19EA7CB6203C4A3900F30EF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19EA7CB7203C4A3900F30EF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19EA7CBB203C4A3900F30EF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19EA7CBC203C4A3900F30EF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19EA7CBF203C4A3900F30EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		19EA7CC0203C4A3900F30EF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19EA7CC2203C4A3900F30EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QGMH82S23;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestVoip/liblinphone-sdk/apple-darwin/Frameworks",
+					"$(PROJECT_DIR)/TestVoip/liblinphone-sdk/apple-darwin/lib",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/TestVoip/liblinphone-sdk/apple-darwin/include";
+				INFOPLIST_FILE = TestVoip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestVoip/liblinphone-sdk/apple-darwin/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saeidbsn.TestVoip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestVoip/TestVoip-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 arm64 x86_64";
+			};
+			name = Debug;
+		};
+		19EA7CC3203C4A3900F30EF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3QGMH82S23;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestVoip/liblinphone-sdk/apple-darwin/Frameworks",
+					"$(PROJECT_DIR)/TestVoip/liblinphone-sdk/apple-darwin/lib",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/TestVoip/liblinphone-sdk/apple-darwin/include";
+				INFOPLIST_FILE = TestVoip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestVoip/liblinphone-sdk/apple-darwin/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saeidbsn.TestVoip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestVoip/TestVoip-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 arm64 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19EA7CAA203C4A3900F30EF2 /* Build configuration list for PBXProject "TestVoip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19EA7CBF203C4A3900F30EF2 /* Debug */,
+				19EA7CC0203C4A3900F30EF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19EA7CC1203C4A3900F30EF2 /* Build configuration list for PBXNativeTarget "TestVoip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19EA7CC2203C4A3900F30EF2 /* Debug */,
+				19EA7CC3203C4A3900F30EF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19EA7CA7203C4A3900F30EF2 /* Project object */;
+}
